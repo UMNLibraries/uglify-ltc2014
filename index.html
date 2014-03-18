@@ -52,7 +52,7 @@
 						Cody's slides are green. Eric's are black. See Cody's slides for Markdown syntax if you wish.
 					</aside>
 				</section>
-				
+
 				<section data-background="assets/oldsite.png">
 					<aside class="notes">
 					<ul>
@@ -178,25 +178,39 @@
 
 				<!-- Prototypes -->
 				<section>
-					<h2>Public process</h2>
-					<ul>
-						<li>Code first</li>
-						<li>Lead conversation</li>
-					</ul>
-				</section>
+          <h1 style="text-align:left;">Dev<br/> Priorities</h1>
+        </section>
+
+        <section>
+          <h2>Public Process</h2>
+          <ul>
+            <li>(Very) Early prototype</li>
+            <li>Rapid design iterations</li>
+            <li>Public URL to BETA site</li>
+            <li>Multiple feedback loops</li>
+          </ul>
+        </section>
 
 				<section>
-					<h2>Code first</h2>
-					<ul>
-						<li>Modern web standards
-							<ul>
-								<li>HTML5, CSS3, JS</li>
-							</ul>
-						</li>
-						<li>Functional wireframes</li>
-						<li>Performance-minded redesign</li>
-					</ul>
-				</section>
+          <h2>Modern Web Standards</h2>
+          <a href="http://www.lib.umn.edu/">
+            <img src="assets/web_standards.png" alt="UMN Libraries: Mobile"/>
+          </a>
+        </section>
+
+        <section>
+          <h2>Functional Prototypes</h2>
+          <a href="https://wwwdev.lib.umn.edu/beta_0.1.0/">
+            <img src="assets/functional_prototype.png" alt="UMN Libraries: Beta 0.1.0"/>
+          </a>
+        </section>
+
+        <section>
+          <h2>Performance-Minded Redesign</h2>
+          <a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwwwdev.lib.umn.edu%2Fbeta_0.1.0%2F&amp;tab=mobile">
+            <img src="assets/pagespeed_beta_0.1.0.png" alt="UMN Libraries: PageSpeed Beta 0.1.0"/>
+          </a>
+        </section>
 
 				<section data-background="#4d7e65" data-markdown>
 						<h2>Feedback</h2>
@@ -214,16 +228,127 @@
 				</section>
 
 				<section>
-					<h2>Build process</h2>
-					<ul>
-						<li>Leaderboard</li>
-					</ul>
-				</section>
+          <h1 style="text-align:left;">Build Process</h1>
+        </section>
+
+        <section>
+          <h2>PageSpeed Insights</h2>
+          <h3>Recommendations</h3>
+          <ul>
+            <li>Reduce server response time</li>
+            <li>Prioritize visible content</li>
+            <li>Optimize images</li>
+            <li>Minify HTML, CSS, JavaScript</li>
+            <li>Leverage browser caching</li>
+            <li>Enable compression</li>
+            <li>Avoid landing page redirects</li>
+            <li>Eliminate render-blocking JavaScript and CSS in above-the-fold content</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Build Process</h2>
+            <img src="assets/build_process.gif" alt="UMN Libraries: Build Process"/>
+          <p>^^ Code to MAKE your website awesome.</p>
+        </section>
+
+        <section>
+          <h2>Build TODOs</h2>
+          <ul>
+            <li>Smaller HTML / CSS / JS files</li>
+            <li>Fewer HTTP requests</li>
+            <li>Optimized images</li>
+            <li>Cache-friendly, fingerprinted assets</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Optimize images</h2>
+          <a href="http://tinypng.org/">
+            <img src="assets/tinypng1.png" alt="TinyPNG"/>
+          </a>
+        </section>
+
+        <section>
+          <h2>Optimize images</h2>
+          <a href="http://tinypng.org/">
+            <img src="assets/tinypng2.png" alt="TinyPNG"/>
+          </a>
+        </section>
+
+        <section>
+          <h2>Typical CSS &amp; Javascript</h2>
+          <img src="assets/concatenated1.png" alt="Concatenate Assets"/>
+        </section>
+
+        <section>
+          <h2>Concatenated CSS &amp; Javascript</h2>
+          <img src="assets/concatenated2.png" alt="Concatenate Assets"/>
+        </section>
+
+        <section>
+          <h2>Leverage browser caching</h2>
+          <h3>Regular</h3>
+          <pre><code>
+<link rel="stylesheet" href="css/all.css">
+          </code></pre>
+        </section>
+
+        <section>
+          <h2>Leverage browser caching</h2>
+          <h3>Fingerprinted</h3>
+          <pre><code>
+<link rel="stylesheet" href="css/c06fa4a2.all.css">
+          </code></pre>
+        </section>
+
+        <section>
+          <h2>Typical HTML</h2>
+          <img src="assets/typical_html.png" alt="Typical HTML"/>
+        </section>
+
+        <section>
+          <h2>Minified HTML</h2>
+          <img src="assets/minified_html.png" alt="Minify HTML"/>
+        </section>
+
+        <section>
+          <h2>Speed Leaderboard</h2>
+          <a href="http://umnlib-leaderboard.herokuapp.com/">
+            <img src="assets/pagespeed_big10.png" alt="Speed Leaderboard"/>
+          </a>
+        </section>
+
 				<!-- End prototypes -->
 
 				<section>
-					<h2>Tools/resources</h2>
-				</section>
+          <h1 style="text-align:left;">Tools &amp; <br/>Resources</h1>
+        </section>
+
+        <section>
+          <h2>Google PageSpeed</h2>
+        </section>
+
+        <section>
+          <h2>GTmetrix</h2>
+        </section>
+
+        <section>
+          <h2>HAR Reports</h2>
+        </section>
+
+        <section>
+          <h2>Yeoman, Grunt, Bower</h2>
+        </section>
+
+        <section>
+          <h2>Middleman</h2>
+        </section>
+
+        <section>
+          <h2>Kraken.io</h2>
+          <h3>Online image optimization</h3>
+        </section>
 
 				<section>
 						<h2>Uglifying in Public</h2>
