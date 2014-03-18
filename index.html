@@ -1,448 +1,468 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
 
-		<title>Uglifying in Public</title>
+    <title>Uglifying in Public</title>
 
-		<meta name="description" content="Website design for speed, accessibility, and staff delight">
-		<meta name="author" content="Cody Hanson &amp; Eric Larson">
+    <meta name="description" content="Website design for speed, accessibility, and staff delight">
+    <meta name="author" content="Cody Hanson &amp; Eric Larson">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/night.css" id="theme">
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
-		<script>
-			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-		</script>
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+    document.write('<link rel="stylesheet" href="css/print/' + (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') + '.css" type="text/css" media="print">');
+    </script>
 
-		<!--[if lt IE 9]>
+    <!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
-	</head>
-
-	<body>
-
-		<div class="reveal">
-
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-						<h2>Uglifying in Public</h2>
-
-						
-						<h4>Website design for speed, accessibility,</h4>
-						<h4>and staff delight</h4>
-
-						<p>Cody Hanson and Eric Larson
-
-						Web Development
-						
-						University of Minnesota Libraries</p>
-					<aside class="notes">
-						Cody's slides are green. Eric's are black. See Cody's slides for Markdown syntax if you wish.
-					</aside>
-				</section>
-
-				<section data-background="assets/oldsite.png">
-					<aside class="notes">
-					<ul>
-						<li>3+ year old design (it had been an eventful three years)</li>
-						<li>Aborted contractor agreement</li>
-						<li>ILS/discovery layer changes</li>
-						<li>Why not one more change?</li>
-					</ul>
-					</aside>
-				</section>
-
-				<section>
-          <h1 style="text-align:left;">Responsive <br/>
-              Web <br/>
-              Design</h1>
-        </section>
-				
-				<section>
-					<h2>Support All Devices</h2>
-					<a href="http://www.lib.umn.edu/">
-						<img src="assets/responsive.png" alt="UMN Libraries: Devices"/>
-					</a>
-					<aside class="notes">
-						<ul>
-						<li>Mobile first</li>
-						<li>Speed</li>
-					</ul>
-					</aside>
-				</section>
-
-				<section>
-					<h2>
-						Fluid Grid
-					</h2>
-					<a href="https://wwwdev.lib.umn.edu/beta_0.5.0/index-slide.html">
-						<img src="assets/homepage_desktop.png" alt="Fluid Grid"/>
-					</a>
-				</section>
-				
-				<section>
-					<h2>Mobile First</h2>
-					<a href="http://www.lib.umn.edu/">
-						<img src="assets/mobile.png" alt="UMN Libraries: Mobile"/>
-					</a>
-					<aside class="notes">
-						<ul>
-							<li>Mobile first</li>
-						</ul>
-					</aside>
-				</section>
-				
-				<section>
-					<h2>Mobile First</h2>
-					<ul>
-						<li><strong style="text-decoration:underline;">Emphasize consistency</strong> in your design</li>
-            <li>Prioritize your content</li>
-            <li>Work with real HTML/CSS/JS wireframes</li>
-            <li>Expect increased development time</li>
-					</ul>
-					<aside class="notes">
-						<ul>
-							<li>Mobile first</li>
-						</ul>
-					</aside>
-				</section>
-
-				<section>
-					<h2>Speed</h2>
-					<video data-autoplay src="assets/WhichLoadsFaster.m4v"></video>
-					<p>whichloadsfaster.com</p>
-				</section>
-
-				<section data-background="#4d7e65">
-						<h1 style="text-align:left;">Opinionated design</h1>
-						<br>
-						<br>
-						<h2 class="fragment" style="text-align:right;">(informed opinion)</h2>
-					<aside class="notes">
-						Often used to describe Rails
-					</aside>
-				</section>
-				<section data-background="assets/pageviews.png">
-					<aside class="notes">
-						Annual pageviews for www.lib.umn.edu
-						home page is 50%
-						Next is barely 1%
-						We don't serve our users well or steward our resources well if we pretend otherwise.
-					</aside>
-				</section>
-				<section data-background="#4d7e65">
-					<img src="assets/a-z.png" />
-					<aside class="notes">
-						All databases get equal weight. 
-						Except Q.
-						But some animals are more equal than others.
-					</aside>
-				</section>
-				<section data-background="assets/a-zactual.png">
-					<aside class="notes">
-						Avg. around 16,000
-						Effort required to bend that straight line into this curve is borne by our users.
-					</aside>
-				</section>
-				<section data-background="#4d7e65">
-					<img class="stretch" src="assets/dbs.png" />
-					<aside class="notes">
-
-					</aside>
-				</section>
-
-				<section data-background="#4d7e65">
-					<p style="text-align:left;">"If your UX asks the user to make choices... even if those choices are both clear and useful, the act of deciding is a cognitive drain.</p>
-					<br>
-					<p style="text-align:left;">And not just while they're deciding... even after we choose, an unconscious cognitive background thread is slowly consuming/leaking resources, ‘Was that the right choice?’"</p>
-					<br>
-					<p style="text-align:right;">- Kathy Sierra, "<a href="http://seriouspony.com/blog/2013/7/24/your-app-makes-me-fat">Your App Makes Me Fat</a>"
-
-					<aside class="notes">
-
-					</aside>
-				</section>
-
-
-				<!-- Prototypes -->
-				<section>
-          <h1 style="text-align:left;">Dev<br/> Priorities</h1>
-        </section>
-
-        <section>
-          <h2>Public Process</h2>
-          <ul>
-            <li>(Very) Early prototype</li>
-            <li>Rapid design iterations</li>
-            <li>Public URL to BETA site</li>
-            <li>Multiple feedback loops</li>
-          </ul>
-        </section>
-
-				<section>
-          <h2>Modern Web Standards</h2>
-          <a href="http://www.lib.umn.edu/">
-            <img src="assets/web_standards.png" alt="UMN Libraries: Mobile"/>
-          </a>
-        </section>
-
-        <section>
-          <h2>Functional Prototypes</h2>
-          <a href="https://wwwdev.lib.umn.edu/beta_0.1.0/">
-            <img src="assets/functional_prototype.png" alt="UMN Libraries: Beta 0.1.0"/>
-          </a>
-        </section>
-
-        <section>
-          <h2>Performance-Minded Redesign</h2>
-          <a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwwwdev.lib.umn.edu%2Fbeta_0.1.0%2F&amp;tab=mobile">
-            <img src="assets/pagespeed_beta_0.1.0.png" alt="UMN Libraries: PageSpeed Beta 0.1.0"/>
-          </a>
-        </section>
-
-				<section data-background="#4d7e65" data-markdown>
-						<h2>Feedback</h2>
-
-				</section>
-
-				<section data-background="#4d7e65" data-markdown>
-						<h2>Usability testing</h2>
-
-				</section>
-
-				<section data-background="#4d7e65" data-markdown>
-						<h2>Babies</h2>
-
-				</section>
-
-				<section>
-          <h1 style="text-align:left;">Build Process</h1>
-        </section>
-
-        <section>
-          <h2>PageSpeed Insights</h2>
-          <h3>Recommendations</h3>
-          <ul>
-            <li>Reduce server response time</li>
-            <li>Prioritize visible content</li>
-            <li>Optimize images</li>
-            <li>Minify HTML, CSS, JavaScript</li>
-            <li>Leverage browser caching</li>
-            <li>Enable compression</li>
-            <li>Avoid landing page redirects</li>
-            <li>Eliminate render-blocking JavaScript and CSS in above-the-fold content</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>Build Process</h2>
-            <img src="assets/build_process.gif" alt="UMN Libraries: Build Process"/>
-          <p>^^ Code to MAKE your website awesome.</p>
-        </section>
-
-        <section>
-          <h2>Build TODOs</h2>
-          <ul>
-            <li>Smaller HTML / CSS / JS files</li>
-            <li>Fewer HTTP requests</li>
-            <li>Optimized images</li>
-            <li>Cache-friendly, fingerprinted assets</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>Optimize images</h2>
-          <a href="http://tinypng.org/">
-            <img src="assets/tinypng1.png" alt="TinyPNG"/>
-          </a>
-        </section>
-
-        <section>
-          <h2>Optimize images</h2>
-          <a href="http://tinypng.org/">
-            <img src="assets/tinypng2.png" alt="TinyPNG"/>
-          </a>
-        </section>
-
-        <section>
-          <h2>Typical CSS &amp; Javascript</h2>
-          <img src="assets/concatenated1.png" alt="Concatenate Assets"/>
-        </section>
-
-        <section>
-          <h2>Concatenated CSS &amp; Javascript</h2>
-          <img src="assets/concatenated2.png" alt="Concatenate Assets"/>
-        </section>
-
-        <section>
-          <h2>Leverage browser caching</h2>
-          <h3>Regular</h3>
-          <pre><code>
-<link rel="stylesheet" href="css/all.css">
-          </code></pre>
-        </section>
-
-        <section>
-          <h2>Leverage browser caching</h2>
-          <h3>Fingerprinted</h3>
-          <pre><code>
-<link rel="stylesheet" href="css/c06fa4a2.all.css">
-          </code></pre>
-        </section>
-
-        <section>
-          <h2>Typical HTML</h2>
-          <img src="assets/typical_html.png" alt="Typical HTML"/>
-        </section>
-
-        <section>
-          <h2>Minified HTML</h2>
-          <img src="assets/minified_html.png" alt="Minify HTML"/>
-        </section>
-
-        <section>
-          <h2>Speed Leaderboard</h2>
-          <a href="http://umnlib-leaderboard.herokuapp.com/">
-            <img src="assets/pagespeed_big10.png" alt="Speed Leaderboard"/>
-          </a>
-        </section>
-
-				<!-- End prototypes -->
-
-				<section>
-          <h1 style="text-align:left;">Tools &amp; <br/>Resources</h1>
-        </section>
-
-        <section>
-          <h2>Google PageSpeed</h2>
-          <a href="https://developers.google.com/speed/pagespeed/insights/">
-            <img src="assets/google_pagespeed_insights0.png" alt="Google PageSpeed Insights"/>
-          </a>
-          <p>https://developers.google.com/speed/pagespeed/insights</p>
-        </section>
-
-        <section>
-          <h2>Google PageSpeed &middot; UMN</h2>
-          <a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.lib.umn.edu">
-            <img src="assets/google_pagespeed_insights1.png" alt="Google PageSpeed Insights"/>
-          </a>
-        </section>
-
-        <section>
-          <h2>Google PageSpeed &middot; UW-Madison</h2>
-          <a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.library.wisc.edu">
-            <img src="assets/google_pagespeed_insights2.png" alt="Google PageSpeed Insights"/>
-          </a>
-        </section>
-
-        <section>
-          <h2>GTmetrix</h2>
-          <a href="http://gtmetrix.com/reports/www.lib.umn.edu/5jEMp3uN">
-            <img src="assets/gtmetrix.png" alt="GTmetrix"/>
-          </a>
-          <p>http://gtmetrix.com/reports/www.lib.umn.edu/5jEMp3uN</p>
-        </section>
-
-        <section>
-        	<h2>WEBPAGETEST</h2>
-        	<a href="http://www.webpagetest.org/result/140318_HP_SVY/">
-            <img src="assets/webpagetest.png" alt="WEBPAGETEST"/>
-          </a>
-        	<p>http://www.webpagetest.org/result/140318_HP_SVY/</p>
-        </section>
-
-        <section>
-          <h2>Middleman</h2>
-        </section>
-
-        <section>
-          <h2>Bootstrap</h2>
-        </section>
-
-        <section>
-          <h2>LESS</h2>
-        </section>
-
-        <section>
-          <h2>Bower</h2>
-        </section>
-
-        <section>
-          <h2>Kraken.io</h2>
-          <h3>Online image optimization</h3>
-        </section>
-
-				<section>
-						<h2>Uglifying in Public</h2>
-
-						
-						<h4>Website design for speed, accessibility,</h4>
-						<h4>and staff delight</h4>
-
-						<p>Cody Hanson and Eric Larson
-
-						Web Development
-						
-						University of Minnesota Libraries</p>
-					<aside class="notes">
-						Cody's slides are green. Eric's are black. See Cody's slides for Markdown syntax if you wish.
-					</aside>
-				</section>
-
-
-			</div>
-
-		</div>
-
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
-
-		<script>
-
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: false,
-				progress: false,
-				history: true,
-				center: true,
-
-				width: 1024,
-				height: 768,
-
-				backgroundTransition: 'slide',
-
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
-
-				// Parallax scrolling
-				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				// parallaxBackgroundSize: '2100px 900px',
-
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
-
-		</script>
-
-	</body>
+</head>
+
+<body>
+
+    <div class="reveal">
+
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section>
+                <h2>Uglifying in Public</h2>
+
+
+                <h4>Website design for speed, accessibility,</h4>
+                <h4>and staff delight</h4>
+
+                <p>Cody Hanson and Eric Larson Web Development University of Minnesota Libraries</p>
+                <aside class="notes">
+                    Cody's slides are green. Eric's are black. See Cody's slides for Markdown syntax if you wish.
+                </aside>
+            </section>
+
+            <section data-background="assets/oldsite.png">
+                <aside class="notes">
+                    <ul>
+                        <li>3+ year old design (it had been an eventful three years)</li>
+                        <li>Aborted contractor agreement</li>
+                        <li>ILS/discovery layer changes</li>
+                        <li>Why not one more change?</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h1 style="text-align:left;">Responsive
+                    <br/>Web
+                    <br/>Design
+                </h1>
+            </section>
+
+            <section>
+                <h2>Support All Devices</h2>
+                <a href="http://www.lib.umn.edu/">
+                    <img src="assets/responsive.png" alt="UMN Libraries: Devices" />
+                </a>
+                <aside class="notes">
+                    <ul>
+                        <li>Mobile first</li>
+                        <li>Speed</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>
+                    Fluid Grid
+                </h2>
+                <a href="https://wwwdev.lib.umn.edu/beta_0.5.0/index-slide.html">
+                    <img src="assets/homepage_desktop.png" alt="Fluid Grid" />
+                </a>
+            </section>
+
+            <section>
+                <h2>Mobile First</h2>
+                <a href="http://www.lib.umn.edu/">
+                    <img src="assets/mobile.png" alt="UMN Libraries: Mobile" />
+                </a>
+                <aside class="notes">
+                    <ul>
+                        <li>Mobile first</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Mobile First</h2>
+                <ul>
+                    <li>
+                        <strong style="text-decoration:underline;">Emphasize consistency</strong>in your design</li>
+                    <li>Prioritize your content</li>
+                    <li>Work with real HTML/CSS/JS wireframes</li>
+                    <li>Expect increased development time</li>
+                </ul>
+                <aside class="notes">
+                    <ul>
+                        <li>Mobile first</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Speed</h2>
+                <video data-autoplay src="assets/WhichLoadsFaster.m4v"></video>
+                <p>whichloadsfaster.com</p>
+            </section>
+
+            <section data-background="#4d7e65">
+                <h1 style="text-align:left;">Opinionated design</h1>
+                <br>
+                <br>
+                <h2 class="fragment" style="text-align:right;">(informed opinion)</h2>
+                <aside class="notes">
+                    Often used to describe Rails
+                </aside>
+            </section>
+            <section data-background="assets/pageviews.png">
+                <aside class="notes">
+                    Annual pageviews for www.lib.umn.edu home page is 50% Next is barely 1% We don't serve our users well or steward our resources well if we pretend otherwise.
+                </aside>
+            </section>
+            <section data-background="#4d7e65">
+                <img src="assets/a-z.png" />
+                <aside class="notes">
+                    All databases get equal weight. Except Q. But some animals are more equal than others.
+                </aside>
+            </section>
+            <section data-background="assets/a-zactual.png">
+                <aside class="notes">
+                    Avg. around 16,000 Effort required to bend that straight line into this curve is borne by our users.
+                </aside>
+            </section>
+            <section data-background="#4d7e65">
+                <img class="stretch" src="assets/dbs.png" />
+                <aside class="notes">
+
+                </aside>
+            </section>
+
+            <section data-background="#4d7e65">
+                <p style="text-align:left;">"If your UX asks the user to make choices... even if those choices are both clear and useful, the act of deciding is a cognitive drain.</p>
+                <br>
+                <p style="text-align:left;">And not just while they're deciding... even after we choose, an unconscious cognitive background thread is slowly consuming/leaking resources, ‘Was that the right choice?’"</p>
+                <br>
+                <p style="text-align:right;">- Kathy Sierra, "<a href="http://seriouspony.com/blog/2013/7/24/your-app-makes-me-fat">Your App Makes Me Fat</a>"
+
+                    <aside class="notes">
+
+                    </aside>
+            </section>
+
+
+            <section>
+                <h1 style="text-align:left;">Dev
+                    <br/>Priorities</h1>
+            </section>
+
+            <section>
+                <h2>Public Process</h2>
+                <ul>
+                    <li>(Very) Early prototype</li>
+                    <li>Rapid design iterations</li>
+                    <li>Public URL to BETA site</li>
+                    <li>Multiple feedback loops</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Modern Web Standards</h2>
+                <a href="http://www.lib.umn.edu/">
+                    <img src="assets/web_standards.png" alt="UMN Libraries: Mobile" />
+                </a>
+            </section>
+
+            <section>
+                <h2>Functional Prototypes</h2>
+                <a href="https://wwwdev.lib.umn.edu/beta_0.1.0/">
+                    <img src="assets/functional_prototype.png" alt="UMN Libraries: Beta 0.1.0" />
+                </a>
+            </section>
+
+            <section>
+                <h2>Performance-Minded Redesign</h2>
+                <a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwwwdev.lib.umn.edu%2Fbeta_0.1.0%2F&amp;tab=mobile">
+                    <img src="assets/pagespeed_beta_0.1.0.png" alt="UMN Libraries: PageSpeed Beta 0.1.0" />
+                </a>
+            </section>
+
+            <section data-background="#4d7e65">
+                <h1 style="text-align:left;">Feedback</h1>
+            </section>
+
+            <section data-background="#4d7e65">
+                <img class="stretch" src="assets/frustrating.png" alt="Frustrated feedback" />
+            </section>
+
+            <section data-background="#4d7e65" data-markdown>
+                <h2>Usability testing</h2>
+
+            </section>
+
+            <section data-background="#4d7e65" data-markdown>
+                <h2>Babies</h2>
+
+            </section>
+
+            <section>
+                <h1 style="text-align:left;">Build Process</h1>
+            </section>
+
+            <section>
+                <h2>PageSpeed Insights</h2>
+                <h3>Recommendations</h3>
+                <ul>
+                    <li>Reduce server response time</li>
+                    <li>Prioritize visible content</li>
+                    <li>Optimize images</li>
+                    <li>Minify HTML, CSS, JavaScript</li>
+                    <li>Leverage browser caching</li>
+                    <li>Enable compression</li>
+                    <li>Avoid landing page redirects</li>
+                    <li>Eliminate render-blocking JavaScript and CSS in above-the-fold content</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Build Process</h2>
+                <img src="assets/build_process.gif" alt="UMN Libraries: Build Process" />
+                <p>^^ Code to MAKE your website awesome.</p>
+            </section>
+
+            <section>
+                <h2>Build TODOs</h2>
+                <ul>
+                    <li>Smaller HTML / CSS / JS files</li>
+                    <li>Fewer HTTP requests</li>
+                    <li>Optimized images</li>
+                    <li>Cache-friendly, fingerprinted assets</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Optimize images</h2>
+                <a href="http://tinypng.org/">
+                    <img src="assets/tinypng1.png" alt="TinyPNG" />
+                </a>
+            </section>
+
+            <section>
+                <h2>Optimize images</h2>
+                <a href="http://tinypng.org/">
+                    <img src="assets/tinypng2.png" alt="TinyPNG" />
+                </a>
+            </section>
+
+            <section>
+                <h2>Typical CSS &amp; Javascript</h2>
+                <img src="assets/concatenated1.png" alt="Concatenate Assets" />
+            </section>
+
+            <section>
+                <h2>Concatenated CSS &amp; Javascript</h2>
+                <img src="assets/concatenated2.png" alt="Concatenate Assets" />
+            </section>
+
+            <section>
+                <h2>Leverage browser caching</h2>
+                <h3>Regular</h3>
+                <pre>
+                    <code>
+                        <link rel="stylesheet" href="css/all.css">
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Leverage browser caching</h2>
+                <h3>Fingerprinted</h3>
+                <pre>
+                    <code>
+                        <link rel="stylesheet" href="css/c06fa4a2.all.css">
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Typical HTML</h2>
+                <img src="assets/typical_html.png" alt="Typical HTML" />
+            </section>
+
+            <section>
+                <h2>Minified HTML</h2>
+                <img src="assets/minified_html.png" alt="Minify HTML" />
+            </section>
+
+            <section>
+                <h2>Speed Leaderboard</h2>
+                <a href="http://umnlib-leaderboard.herokuapp.com/">
+                    <img src="assets/pagespeed_big10.png" alt="Speed Leaderboard" />
+                </a>
+            </section>
+
+
+            <section>
+                <h1 style="text-align:left;">Tools &amp;
+                    <br/>Resources</h1>
+            </section>
+
+            <section>
+                <h2>Google PageSpeed</h2>
+                <a href="https://developers.google.com/speed/pagespeed/insights/">
+                    <img src="assets/google_pagespeed_insights0.png" alt="Google PageSpeed Insights" />
+                </a>
+                <p>https://developers.google.com/speed/pagespeed/insights</p>
+            </section>
+
+            <section>
+                <h2>Google PageSpeed &middot; UMN</h2>
+                <a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.lib.umn.edu">
+                    <img src="assets/google_pagespeed_insights1.png" alt="Google PageSpeed Insights" />
+                </a>
+            </section>
+
+            <section>
+                <h2>Google PageSpeed &middot; UW-Madison</h2>
+                <a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.library.wisc.edu">
+                    <img src="assets/google_pagespeed_insights2.png" alt="Google PageSpeed Insights" />
+                </a>
+            </section>
+
+            <section>
+                <h2>GTmetrix</h2>
+                <a href="http://gtmetrix.com/reports/www.lib.umn.edu/5jEMp3uN">
+                    <img src="assets/gtmetrix.png" alt="GTmetrix" />
+                </a>
+                <p>http://gtmetrix.com/reports/www.lib.umn.edu/5jEMp3uN</p>
+            </section>
+
+            <section>
+                <h2>WEBPAGETEST</h2>
+                <a href="http://www.webpagetest.org/result/140318_HP_SVY/">
+                    <img src="assets/webpagetest.png" alt="WEBPAGETEST" />
+                </a>
+                <p>http://www.webpagetest.org/result/140318_HP_SVY/</p>
+            </section>
+
+            <section>
+                <h2>Middleman</h2>
+            </section>
+
+            <section>
+                <h2>Bootstrap</h2>
+            </section>
+
+            <section>
+                <h2>LESS</h2>
+            </section>
+
+            <section>
+                <h2>Bower</h2>
+            </section>
+
+            <section>
+                <h2>Kraken.io</h2>
+                <h3>Online image optimization</h3>
+            </section>
+
+            <section>
+                <h2>Uglifying in Public</h2>
+
+
+                <h4>Website design for speed, accessibility,</h4>
+                <h4>and staff delight</h4>
+
+                <p>Cody Hanson and Eric Larson Web Development University of Minnesota Libraries</p>
+                <aside class="notes">
+                    Cody's slides are green. Eric's are black. See Cody's slides for Markdown syntax if you wish.
+                </aside>
+            </section>
+
+
+        </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: false,
+        progress: false,
+        history: true,
+        center: true,
+
+        width: 1024,
+        height: 768,
+
+        backgroundTransition: 'slide',
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function() {
+                return !document.body.classList;
+            }
+        }, {
+            src: 'plugin/markdown/marked.js',
+            condition: function() {
+                return !!document.querySelector('[data-markdown]');
+            }
+        }, {
+            src: 'plugin/markdown/markdown.js',
+            condition: function() {
+                return !!document.querySelector('[data-markdown]');
+            }
+        }, {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            callback: function() {
+                hljs.initHighlightingOnLoad();
+            }
+        }, {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true,
+            condition: function() {
+                return !!document.body.classList;
+            }
+        }, {
+            src: 'plugin/notes/notes.js',
+            async: true,
+            condition: function() {
+                return !!document.body.classList;
+            }
+        }]
+    });
+    </script>
+
+</body>
+
 </html>
